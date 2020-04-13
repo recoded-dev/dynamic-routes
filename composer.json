@@ -1,0 +1,36 @@
+{
+    "name": "recoded/dynamic-routes",
+    "description": "A library to create basic dynamic routes (e.g. based on language)",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "^6.0 || ^7.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Noël Hagestein",
+            "email": "contact@noel.codes"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Recoded\\DynamicRoutes\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Recoded\\DynamicRoutes\\RouteServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "lint": [
+            "php-cs-fixer fix --dry-run --verbose"
+        ]
+    }
+}
